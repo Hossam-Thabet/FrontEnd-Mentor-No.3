@@ -48,9 +48,6 @@
     overflow-wrap: break-word;
   }
   
-  p {
-    text-wrap: pretty;
-  }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
@@ -81,16 +78,22 @@
 
   .card {
     padding:24px;
+    
   }
 
-  .card img {
+  .card > img {
     border-radius: 20px;
+    margin-bottom: 24px;
+    object-position:center;
+    object-fit:none;
+    width: 279px;
+    height: 200px;
   }
 
   .card__category {
     background-color: var(--clr-yellow);
     width: fit-content;
-    padding: 12px;
+    padding: 4px 12px;
     font-size: 12px;
     font-family: "figtree extrabold" , sans-serif ;
     border-radius: 4px;
@@ -100,12 +103,15 @@
   .card__time {
     font-family: "figtree semibold" , sans-serif;
     font-size: 12px;
+    color: var(--clr-gray950);
+    margin-block: 12px;
   }
 
   .card__title {
     font-family: "figtree extrabold" , sans-serif;
     font-size: 20px;
     color: var(--clr-gray950);
+    margin-bottom: 12px;
 
   }
 
@@ -113,36 +119,32 @@
     font-family: "figtree semibold" , sans-serif;
     font-size: 14px;
     color: var(--clr-gray500);
+    margin-bottom: 24px;
+    width: 279px;
   }
 
   .flex-group {
     display: flex;
     align-items: center;
+    column-gap: 12px;
   }
 
-  .card h3 {
+  .flex-group img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .flex-group h3 {
     font-family: "figtree extrabold" , sans-serif;
     font-size: 14px;
     color: var(--clr-gray950);
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution { 
   font-size: 11px; 
   text-align: center;
   position: absolute; 
-  bottom: 30px;
+  bottom: 20px;
   left:0;
   right:0;
  }
